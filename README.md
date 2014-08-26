@@ -3,9 +3,11 @@ Examples for the Usersnap GitHub Issues Integration
 
 Get bug reports with screenshots into your GitHub Issues!
 
+[See a working Demo](http://grexi.github.io/gh-issues/).
+
 [![Usersnap GitHub](browser_github.png)](https://usersnap.com/github?gat=gh)
 
-[See the working Demo](http://grexi.github.io/gh-issues/).
+
 
 Questions
 =========
