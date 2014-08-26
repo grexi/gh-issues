@@ -1,79 +1,70 @@
 <!DOCTYPE html>
 <html>
+<head>
+<title>Examples for the Usersnap Console Recorder</title>
 
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="issues : Examples for Usersnap+GitHub Issues">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/pure-min.css" />
+<style type="text/css">
+.content {
+margin-left: auto;
+margin-right: auto;
+padding-left: 1em;
+padding-right: 1em;
+max-width: 768px;
+}
+a {
+  color: #005399;
+}
+</style>
+</head>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+<body style="margin:0px;">
+<div class="content">
+<h1><a href="https://usersnap.com/?gat=gh" target="_blank">Usersnap</a> &hearts; <a href="https://usersnap.com/github?gat=gh" target="_blank">GitHub Issues</a></h1>
+<h2>1. Setup</h2>
+<p>Sign up for <a href="https://usersnap.com/?gat=gh">Usersnap</a>, create an example project and connect it with GitHub (<a href="https://usersnap.com/connect/github?gat=gh">Help</a>).<br>
+<img src="connect.png"><br>
+<h2>2. Add Usersnap to your site</h2>
+<p>Copy and paste the JavaScript snippet to your page (like on this page):<br>
+<img src="snippet.png"></p>
+<p>You can do this by pressing F12, Ctrl+Shift+J (or Cmd+Shift+J), or via the menu. You probably already know how to do this ;-)</p>
 
-    <title>issues</title>
-  </head>
+<h2>3. Click on the feedback button and make some annotations</h2>
+<p><img src="button.png"></p>
+<p>Here is an example of a website issue, just for you:</p>
+<div style="width:50px;height:50px;border:1px solid black;background-color: orange; font-size:20px;">OVERFLOWS</div>
+<h2>4. Get Issues with Screenshots on GitHub Issues</h2>
+<p>Open the issues of your connected repository (<a href="https://github.com/grexi/gh-issues/issues">See the issues section of this repository</a>).</p>
 
-  <body>
+<a href="https://usersnap.com/?gat=gh"><img src="browser_github.png" border="0" width=600></a></p>
+<h2>5. Add it to all your web projects</h2>
+<p>... and spread the word if you like it:<br> <a href="https://twitter.com/share" class="twitter-share-button" data-text="Screenshot bug reports for GitHub Issues" data-via="usersnap" data-size="large">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</p>
+</div>
+<a href="https://github.com/grexi/gh-issues"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/grexi/gh-issues">View on GitHub</a>
+<script type="text/javascript">
+ (function() {
+   var s = document.createElement("script");
+   s.type = "text/javascript";
+   s.async = true;
+   s.src = '//api.usersnap.com/load/'+
+           'fcb696a1-e62c-4e8e-8755-a547607b16d4.js';
+   var x = document.getElementsByTagName('script')[0];
+   x.parentNode.insertBefore(s, x);
+ })();
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-          <h1 id="project_title">issues</h1>
-          <h2 id="project_tagline">Examples for Usersnap+GitHub Issues</h2>
+  ga('create', 'UA-26184212-1', 'auto');
+  ga('send', 'pageview');
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/grexi/gh-issues/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/grexi/gh-issues/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">issues maintained by <a href="https://github.com/grexi">grexi</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
+</script>
+</body>
 </html>
